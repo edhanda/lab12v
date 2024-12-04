@@ -13,7 +13,11 @@ jobs:
         run: echo "Hello, GitHub Actions!"
       - name: Run tests
         run: |
+          echo "Running tests...."
+          python -m unittest discover
+      - name: Build the application
           echo "Building the app..."
           npm install
           npm run build
+          
           
