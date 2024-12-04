@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest # Use an Ubuntu virtual machine
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3 # Check out the repository code
-    - name: Run a simple script
-      run: echo "Hello, GitHub Actions!"
+      - name: Checkout code
+        uses: actions/checkout@v3 # Check out the repository code
+      - name: Run a simple script
+        run: echo "Hello, GitHub Actions!"
