@@ -1,0 +1,13 @@
+name: CI Example
+on:
+  push:
+    branches:
+      - main # Run this workflow when changes are pushed to the main branch
+jobs:
+  build:
+    runs-on: ubuntu-latest # Use an Ubuntu virtual machine
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3 # Check out the repository code
+    - name: Run a simple script
+      run: echo "Hello, GitHub Actions!"
