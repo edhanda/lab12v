@@ -16,8 +16,13 @@ jobs:
           echo "Running tests...."
           python -m unittest discover
       - name: Build the application
+        run: |
           echo "Building the app..."
           npm install
           npm run build
-          
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'    
           
